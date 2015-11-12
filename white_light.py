@@ -7,12 +7,12 @@ from bibliopixel.drivers.LPD8806 import *
 driver = DriverLPD8806(num = 32, c_order= ChannelOrder.GRB, SPISpeed = 16) #SPI$
 
 #Import leds info and set up
-from bibliopixel.leds import *
-leds = ledsStrip(driver)
+from bibliopixel.led import *
+leds = LEDStrip(driver)
 
 #Import and setup test animation
-from bibliopixel.animation import *
-anim1 = StripChannelTest(leds)
+#from bibliopixel.animation import *
+#anim1 = StripChannelTest(leds)
 
 #Import and setup test animation
 #from strip_animation import *
